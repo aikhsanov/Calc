@@ -1,0 +1,205 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .0s ease-in-out;
+  }
+
+header:after, .container:after, footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a{
+text-decoration: none;
+outline: none;
+}
+
+img {
+display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: "Open Sans", sans-serif;
+font-weight: normal;
+letter-spacing: 1px;
+}
+
+ul {
+list-style: none;
+}
+#calc {
+  margin-top: 300px;
+  margin-left: 300px;
+}
+table {
+  width: 500px;
+  height: 410px;
+  background-color: #87ccded1;
+  border: 7px solid #529fb3;
+}
+th {
+  text-align: right;
+  display: block;
+}
+td {
+  display: inline-block;
+  padding: 20px;
+  width: 110px;
+  height: 65px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #4657a0;
+  margin: 6px;
+  border-right: 5px solid #1b2550;
+  border-bottom: 5px solid #1b2550;
+  border-left: 1px solid #1b2550;
+  border-top: 1px solid #1b2550;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Edge, Opera and Firefox */
+}
+td:hover {
+  background-color: #5e6eb7f7;
+}
+td:active {
+  background-color: #384992;
+  border-right: none;
+  border-bottom: none;
+  border-top: 4px solid #1b2550;
+  border-left: 4px solid #1b2550;
+}
+#ans {
+    overflow: hidden;
+    text-overflow: clip;
+    display: inline-block;
+    width: 488px;
+    padding: 5px;
+    border: 4px solid #1b2550;
+    background-color: #4657a038;
+    height: 73px;
+    font-size: 3rem;
+    -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+         -ms-user-select: none; /* Internet Explorer/Edge */
+             user-select: none; /* Non-prefixed version, currently
+                                   supported by Chrome, Edge, Opera and Firefox */
+}
+#clean {
+  background-color: #ff3800e3;
+}
+
+#history {
+    width: 258px;
+    height: 490px;
+    border: 4px solid #529fb3;
+    position: absolute;
+    left: 832px;
+    top: 300px;
+    background-color: #8ab9d5;
+    overflow: scroll;
+    visibility: hidden;
+    overflow-x: hidden;
+    -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+         -ms-user-select: none; /* Internet Explorer/Edge */
+             user-select: none; /* Non-prefixed version, currently
+                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+#history p {
+  font-size: 0.9rem;
+  color: #1b2550;
+  padding: 5px;
+}
+#buttons {
+  margin-top: 5px;
+  margin-left: 4px;
+}
+#shhistory {
+  width: 58px;
+  height: 30px;
+  background: #4657a0;
+  font-size: 0.73rem;
+  color: white;
+  border: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Edge, Opera and Firefox */
+}
+#shhistory:hover {
+  background-color: #6072b8;
+}
+#shhistory:active {
+  background-color: #384992;
+}
+#design {
+  width: 58px;
+  height: 30px;
+  background: #4657a0;
+  color: white;
+  border: none;
+  font-size: 0.73rem;
+}
+#design:hover {
+  background-color: #6072b8;
+}
+#design:active {
+  background-color: #384992;
+}
+#cehistory {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #4657a0;
+    color: white;
+    border: none;
+    left: 182px;
+    font-size: .65rem;
+    text-align: center;
+    top: 5px;
+    border: 1px solid #1b2550;
+    -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+         -ms-user-select: none; /* Internet Explorer/Edge */
+             user-select: none; /* Non-prefixed version, currently
+                                   supported by Chrome, Edge, Opera and Firefox */
+}
+#cehistory:hover {
+  background-color: #6072b8;
+}
+#cehistory:active {
+  background-color: #384992;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4657a0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1b2550;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

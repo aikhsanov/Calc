@@ -1,0 +1,219 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .0s ease-in-out;
+  }
+
+header:after, .container:after, footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  background-color: #000000;
+}
+a{
+text-decoration: none;
+outline: none;
+}
+
+img {
+display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: "Open Sans", sans-serif;
+font-weight: normal;
+letter-spacing: 1px;
+color: white;
+}
+
+ul {
+list-style: none;
+}
+#calc {
+  position: relative;
+  display:block;
+  margin-top: 350px;
+  margin-left: 350px;
+}
+#screen {
+  text-align: right;
+  display: block;
+}
+table {
+  width: 250px;
+  height: 386px;
+  background-color: #000000;
+}
+td {
+  display: inline-block;
+  padding: 18px 15px 15px 13px;
+  width: 58px;
+  height: 58px;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #364148;
+  border-radius: 4px;
+  margin: 2px;
+  color: white;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Edge, Opera and Firefox */
+}
+td:hover {
+  background-color: #46545d;
+}
+td:active {
+    background-color: #212629;
+    border-right: none;
+    border-bottom: none;
+    /* border-top: 4px solid #1a1d1f; */
+    /* border-left: 4px solid #1a1d1f; */
+    /* border-bottom: 4px solid #293238; */
+    /* border-right: 4px solid #293238; */
+    /* border-radius: 3px; */
+}
+#ans {
+  overflow: hidden;
+  text-overflow: clip;
+  width: 249px;
+  padding: 12px 5px 10px 5px;
+  /* border: 4px solid #1b2550; */
+  background-color: #364148;
+  height: 58px;
+  border-radius: 4px;
+  font-size: 2rem;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Edge, Opera and Firefox */
+}
+#clean {
+  background-color: #ff3800e3;
+}
+
+#history {
+  width: 258px;
+  height: 380px;
+  border: 4px solid #46545d;
+  position: absolute;
+  left: 282px;
+  top: 2px;
+  background-color: #364148;
+  overflow: scroll;
+  visibility: hidden;
+  overflow-x: hidden;
+}
+
+#history p {
+  font-size: 0.9rem;
+  color: white;
+}
+#buttons {
+  margin-top: 5px;
+  margin-left: 4px;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Edge, Opera and Firefox */
+}
+#shhistory {
+  width: 58px;
+  height: 30px;
+  background: #364148;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: white;
+  border: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Edge, Opera and Firefox */
+}
+#shhistory:hover {
+  background-color: #46545d;
+}
+#shhistory:active {
+  background-color: #212629;
+}
+#design {
+  width: 58px;
+  height: 30px;
+  background: #364148;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  font-size: 0.75rem;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Edge, Opera and Firefox */
+}
+#design:hover {
+  background-color: #46545d;
+}
+#design:active {
+  background-color: #212629;
+}
+#cehistory {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #2f383e;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  left: 182px;
+  font-size: .65rem;
+  text-align: center;
+  top: 5px;
+  border: 1px solid #48565f;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Edge, Opera and Firefox */
+}
+#cehistory:hover {
+  background-color: #46545d;
+}
+#cehistory:active {
+  background-color: #212629;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #48565f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
